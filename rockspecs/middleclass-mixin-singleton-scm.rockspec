@@ -10,7 +10,7 @@ description = {
    summary = "Singleton mixin for middleclass.",
    detailed = "Mixin that allows you to create singleton objects using middleclass.",
    homepage = "https://github.com/ichesnokov/middleclass-mixin-singleton",
-   license = "Under the the same terms as Lua itself"
+   license = "MIT/X11"
 }
 
 dependencies = {
