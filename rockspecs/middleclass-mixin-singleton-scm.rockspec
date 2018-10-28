@@ -1,5 +1,5 @@
 package = "middleclass-mixin-singleton"
-version = "scm-0",
+version = "scm-0"
 
 source = {
    url = "https://github.com/ichesnokov/middleclass-mixin-singleton/archive/master.zip",
