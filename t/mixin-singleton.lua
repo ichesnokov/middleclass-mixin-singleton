@@ -1,5 +1,5 @@
 #!/usr/bin/env lua
-package.path = package.path .. ';./?.lua'
+package.path = './?.lua;' .. package.path
 require 'Test.More'
 
 local class = require('middleclass')
@@ -26,5 +26,10 @@ error_like(
   'Use CoolClass:instance.*instead of :new',
   'We get a proper error if we try to construct an instance with :new()'
 )
+
+obj1.class:clear_instance()
+local obj3 = CoolClass:instance('1.0.3')
+is(obj3.version, '1.0.3', 'Instance was reinitialized after clearing')
+ok(obj3 ~= obj2, 'New instance is not the same as the previous one')
 
 done_testing()
